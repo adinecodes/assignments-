@@ -9,13 +9,13 @@ just fix the existing ones.
 
 // Written by Kent, Clark
 
-var enemies=["Lex","Batman","Darkseid","Brainiac","General Zod","Doomsday"];
+var enemies = ["Lex","Batman","Darkseid","Brainiac","General Zod","Doomsday"];
 
-funtion Who_Wins(is-there-kryptonite,enemy_name)
+funtion whoWins (isThereKryptonite, enemyName)
 {
-if (!is-there-kryptonite)
+if (isThereKryptonite) 
 {
-    return "Superman beats " +enemyName+ ", of course";
+    return "Superman beats" +enemyName+ ", of course";
 }
 
 else{
@@ -23,24 +23,27 @@ else{
 }
     }
 
-for (var i=0;i<enemies.length;i++)
+for (var i = 0; i < enemies.length; i++)
 {
     var is_there_kryptonite:
-    if (i%2=== 0) {
-        is_there_kryptonite = true;
-    } else {
-        is_there_kryptonite = false;
-    }
-    console.log(Who_Wins(is_there_kryptonite,enemies[i]));
+     if (i % 2 === 0); 
+     { isThereKryptonite = true;
+          } else {
+              isThereKryptonite = false;
+            }
+            console.log(Who_Wins(isThereKryptonite,enemies[i]));
 }
 
-function howAttractedIsLoisLaneToMe ()
+function howAttractedIsLois ()
 {
-    // 1 is not at all attracted, 10 is "super" attracted...
-    return Math.floor((Mat.random()*10)+1);
+    /* 
+    1 is not at all attracted, 10 is "super" attracted...
+    */
+
+    return Math.floor((Mat.random() * 10 ) + 1);
 }
 
-consol.log( howAttractedIsLoisLaneToMe ()) ;
+console.log( howAttractedIsLois ()) ;
 
 var clarkKent =true;
 var superman = false;
@@ -51,4 +54,6 @@ while (clarkKent){
     if (phoneBoothQuickChange>= 0.5) {
         clarkKent=false;
         superman=true;
-        console.log("Now I'm Superman!");}}
+        console.log("Now I'm Superman!");
+        }  
+    }
