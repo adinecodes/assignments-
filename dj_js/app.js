@@ -1,33 +1,38 @@
 var item = document.getElementById("square");
 item.addEventListener("mouseover", func, false);
 
-function func()
-{  
-  document.getElementById("square");
-   item.setAttribute("style", "background-color:blue;")
+function func(){  
+  item.setAttribute("style", "background-color:blue;")
 }
 
-document.getElementById("square");
 item.addEventListener("mousedown", mouseDown, );
-
-document.getElementById("square");
 item.addEventListener("mouseup", mouseUp, );
 
-
-function mouseDown() {
-  document.getElementById("square");
+function mouseDown() {  
   item.setAttribute("style" , "background-color:red;")
 }
-
-function mouseUp() {
-  document.getElementById("square");
+function mouseUp() { 
   item.setAttribute("style", "background-color:yellow")
 }
-
-document.getElementById("square");
 document.addEventListener("wheel", scroll);
-
 function scroll () {
-  document.getElementById("square");
   item.setAttribute("style", "background-color:orange")
 }
+
+window.addEventListener("keydown", checkKeyPressed, false);
+function checkKeyPressed(event){
+  console.log(event)
+  if (event.keyCode === 66){
+    console.log(item)
+    item.setAttribute("style", "background-color:blue;")
+  } else if  (event.keyCode === 82){
+      item.setAttribute("style" , "background-color:red;")
+  } else if ( event.keyCode ===89) {
+  item.setAttribute("style" , "background-color:yellow")
+}else if ( event.keyCode ===71) {
+item.setAttribute("style" , "background-color:green")
+}else if ( event.keyCode ===79)
+item.setAttribute("style" , "background-color:orange")
+} 
+
+
