@@ -29,10 +29,10 @@ function checkKeyPressed(event){
       item.setAttribute("style" , "background-color:red;")
   } else if ( event.keyCode ===89) {
   item.setAttribute("style" , "background-color:yellow")
-}else if ( event.keyCode ===71) {
-item.setAttribute("style" , "background-color:green")
-}else if ( event.keyCode ===79)
-item.setAttribute("style" , "background-color:orange")
+  }else if ( event.keyCode ===71) {
+  item.setAttribute("style" , "background-color:green")
+  }else if ( event.keyCode ===79)
+  item.setAttribute("style" , "background-color:orange")
 } 
 
 
