@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Simple HTML Calculator</title>
+    <meta name="html calculator" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="cal.css">
+  </head>
+  <body>
+   <h1>Simple HTLM Calculator</h1>
+   <div class = "wrap">
+     <form name = "cal">
+       <input type = "text" name = "display">
+       <br><br>
+
+       <input type = "button" value = "9" onclick = "cal.display.value+='9'">
+       <input type = "button" value = "8" onclick = "cal.display.value+='8'">
+       <input type = "button" value = "7" onclick = "cal.display.value+='7'">
+       <input type = "button" value = "+" onclick = "cal.display.value+='+'">
+       <br><br>
+
+       <input type = "button" value = "6" onclick = "cal.display.value+='6'">
+       <input type = "button" value = "5" onclick = "cal.display.value+='5'">
+       <input type = "button" value = "4" onclick = "cal.display.value+='4'">
+       <input type = "button" value = "-" onclick= "cal.display.value+='-'">
+       <br><br>
+
+       <input type = "button" value = "3" onclick = "cal.display.value+='3'">
+       <input type = "button" value = "2" onclick = "cal.display.value+='2'">
+       <input type = "button" value = "1" onclick= "cal.display.value+='1'">
+       <input type = "button" value = "*" onclick = "cal.display.value+='*'">
+       <br><br>
+
+       <input type = "button" value = "0" onclick= "cal.display.value+='0'">
+       <input type = "button" value = "/" onclick = "cal.display.value+='/'">
+       <input type = "button" value = "%" onclick = "cal.display.value+='%'">
+       <input type = "button" value = "=" onclick = "cal.display.value =eval (cal.display.value)"> 
+       <br><br>
+
+       <input type = "button" value = "Delete" onclick= "cal.display.value= ''" id = "del">
+
+     </form>
+
+   </div>
+
+  
+    
+    <script src="app.js" ></script>
+  </body>
+</html>
