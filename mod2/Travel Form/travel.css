@@ -1,0 +1,15 @@
+h1, h2  {
+  text-align: center;
+}
+
+.wrap {
+  width: 410px;
+  margin: auto;
+  height: auto;
+  background: teal;
+  padding: 15px;
+}
+
+body {
+  background-color: pink;
+}

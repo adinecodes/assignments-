@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="Travel Form" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="travel.css">
+  </head>
+  <body>
+
+    <h1>Travel Form</h1>
+    <h2>Please fill out the form below</h2>
+
+    <div class = "wrap">
+
+   <form name="myForm">
+
+    First Name:  <input type= "text" placeholder="First Name" name="firstName" required/>
+     <br><br>
+
+    Last Name: <input type= "text" placeholder="Last Name" name="lastName" required/>
+     <br><br>
+
+    Age: <input type= "number"  name="age" required/>
+    <br><br>
+
+    Gender: Male: <input type="radio" name="gender" value="Male"/>  Female: <input type="radio" name="gender" value="Female"/> 
+    <br><br>
+
+    Location:
+    <select name="park">
+      <option value="Grand Canyon">Grand Canyon</option>
+      <option value="Big Bear">Big Bear</option>
+      <option value="Zion">Zion</option>
+  </select>
+  <br><br>
+  Dietary restrictions: 
+    vegetarian: <input type= "checkbox" value="vegetarian" name="food"/>
+    kosher: <input type= "checkbox" value="kosher" name="food"/>
+    lactose free: <input type= "checkbox" value="lactose" name="food"/>
+    <br><br>
+
+    <input type="button" onclick= 'printChecked()' value="Submit"/>
+</form></div>
+ 
+    
+    <script src="app.js" async defer></script>
+  </body>
+</html>
