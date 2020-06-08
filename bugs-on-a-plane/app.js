@@ -20,7 +20,7 @@ function formAlert()  {
     }
 
 
-    alert("First Name: " + firstName + "Last Name: " + lastName + "Age: " + age + "Gender: " + gender + "Travel Location: " + location + "Diet: " + diet + "Awesome, now if you die, it won't be an accident..");
+    alert("First Name: "  + firstName + "\n" + "Last Name: " + lastName + " \n" +"Age: " + age + " \n" +"Gender: " + gender + " \n" + "Travel Location: " + location + " \n" + "Diet: " + diet + " \n" + "Awesome, now if you die, it won't be an accident..");
 }
 
 

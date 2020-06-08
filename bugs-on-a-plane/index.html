@@ -8,31 +8,39 @@
     <h1>Welcome to Blah Blah Airlines!</h1>
     <p>Please fill out the folowing form so we don't accidentaly kill you, Yay...</p>
     <form id="airline-form">
-        <input type="text" name="first-name">
         <label for="">First Name</label>
-        <br>
-        <input type="text" name="last-name">
+        <input type="text" name="first-name">
+        
+        <br><br>
         <label for="">Last Name</label>
-        <br>
-        <input type="digit" name="age">
+        <input type="text" name="last-name">
+       
+        <br><br>
         <label for="">Age</label>
-        <br>
+        <input type="digit" name="age">
+        
+        <br><br>
+        <label for="meh">Gender</label>
         <input type="radio" name="gender" value="male" id="male">
         <label for="male">Male</label>
-        <br>
+
         <input type="radio" name="gender" value="female" id="female">
         <label for="female">Female</label>
-        <br>
+        
         <input type="radio" name="gender" value="meh.." id="meh">
         <label for="meh">Meh..</label>
-        <br>
+        <br><br>
+        <label for="">Where are you going?</label>
         <select name="travel-location">
             <option value="here">Here</option>
             <option value="there">There</option>
             <option value="overthere">Somewhere else</option>
+            <br><br>
+           
         </select>
-        <label for="">Where are you going?</label>
-        <br>
+        <br><br>
+        <label for="">Diet</label> 
+        <br><br>
         <input class="diet" type="checkbox" name="vegan" id="vegan" value="vegan">
         <label for="vegan">Vegan</label>
         <br>
@@ -41,7 +49,7 @@
         <br>
         <input class="diet" type="checkbox" name="paleo" id="paleo" value="paleo">
         <label for="paleo">Paleo, jk you eat what we give you!</label>
-        <br>
+        <br><br>
         <button type="button" id="submit">Submit</button>
     </form>
     <script src="app.js"></script>

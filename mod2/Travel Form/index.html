@@ -19,34 +19,51 @@
 
     <div class = "wrap">
 
-   <form name="myForm">
+   <form id="airline-form">
 
-    First Name:  <input type= "text" placeholder="First Name" name="firstName" required/>
+      <label for="">First Name</label>
+      <input type="text" name="first-name">
+
      <br><br>
 
-    Last Name: <input type= "text" placeholder="Last Name" name="lastName" required/>
+     <label for="">Last Name</label>
+     <input type="text" name="last-name">
+     
      <br><br>
 
-    Age: <input type= "number"  name="age" required/>
-    <br><br>
+     <label for="">Age</label>
+     <input type="number" name="age">
 
-    Gender: Male: <input type="radio" name="gender" value="Male"/>  Female: <input type="radio" name="gender" value="Female"/> 
-    <br><br>
-
-    Location:
-    <select name="park">
-      <option value="Grand Canyon">Grand Canyon</option>
-      <option value="Big Bear">Big Bear</option>
-      <option value="Zion">Zion</option>
-  </select>
+     <br><br>
+     <label for="">Gender</label>
+     <input type="radio" name="gender" value="male" id="male">
+     <label for="male">Male</label>
+     <input type="radio" name="gender" value="female" id="female">
+     <label for="female">Female</label>
+    
+     <br><br>
+     <label for="">Where are you going?</label>
+     <br><br>
+     <select name="travel-location">
+        <option value="Zion">Zion</option>
+        <option value="Grand Canyon">Grand Canyon</option>
+        <option value="Big Bear">Big Bear</option>
+    </select>
   <br><br>
-  Dietary restrictions: 
-    vegetarian: <input type= "checkbox" value="vegetarian" name="food"/>
-    kosher: <input type= "checkbox" value="kosher" name="food"/>
-    lactose free: <input type= "checkbox" value="lactose" name="food"/>
-    <br><br>
+  <label for="">Please Select Your Food Choice</label>
+  <br><br>
+  <input class="diet" type="checkbox" name="vegan" id="vegan" value="vegan">
+  <label for="vegan">Vegan</label>
+  <br>
+  <input class="diet" type="checkbox" name="gluten" id="gluten" value="gluten-free">
+  <label for="gluten">Gluten-free</label>
+  <br>
+  <input class="diet" type="checkbox" name="paleo" id="paleo" value="paleo">
+  <label for="paleo">Paleo</label>
 
-    <input type="button" onclick= 'printChecked()' value="Submit"/>
+  <br><br>
+
+    <button type= "button" id="submit">Submit</button>
 </form></div>
  
     
