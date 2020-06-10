@@ -10,7 +10,7 @@ goombaInputElem.addEventListener("change", function() {
     document.querySelector("#mytotal").innerHTML = 0;
   } else {
     document.querySelector("#mytotal").innerHTML = (goombaInputValue * 5) + (bobombInputValue * 7) + (cheepInputValue * 11);
-    document.querySelector("#num1").innerHTML = (goombaInputValue * 5);
+    // document.querySelector("#num1").innerHTML = (goombaInputValue * 5);
     
 
   }
@@ -25,7 +25,7 @@ bobombInputElem.addEventListener("change", function () {
     document.querySelector("#mytotal").innerHTML = 0;
   } else {
     document.querySelector("#mytotal").innerHTML = (goombaInputValue * 5) + (bobombInputValue * 7) + (cheepInputValue * 11);
-    document.querySelector("#num2").innerHTML = (bobombInputValue * 7);
+    // document.querySelector("#num2").innerHTML = (bobombInputValue * 7);
   }
 })
 
@@ -36,7 +36,7 @@ cheepInputElem.addEventListener("change", function() {
     document.querySelector("#mytotal").innerHTML = 0;
   } else {
     document.querySelector("#mytotal").innerHTML = (goombaInputValue * 5) + (bobombInputValue * 7) + (cheepInputValue * 11);
-    document.querySelector("#num3").innerHTML = (cheepInputValue * 11);
+    // document.querySelector("#num3").innerHTML = (cheepInputValue * 11);
   }
 
 var goombaInputValue = parseInt(goombaInputElem.value);
