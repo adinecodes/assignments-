@@ -5,12 +5,75 @@
 
 .container {
   display: grid;
-  grid-template-rows: repeat(6, 50px);
+  /* grid-template-rows: repeat(6, 50px); */
   grid-template-columns: 2fr 1fr;
+  margin: 0 auto;
+ 
 }
-.container > div {
+/* .container > div {
   border: solid black 2px;
+} */
+
+
+#title {
+  background-image: url("http://www.csszengarden.com/214/huntington.jpg");
+  background-repeat: no-repeat;
+  color: white;
+  height: 300px;
+  padding-top: 100px;
+  text-align: center;
 }
+
+  
+#sideTop {
+  background-image: url("http://www.csszengarden.com/214/huntington.jpg");
+  padding-top: 100px;
+  
+}
+
+#nextText {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  align-content: center;
+  text-align: center;
+
+
+ 
+  height: 30px;
+  width: 200px;
+  letter-spacing: 2px;
+  padding-top: 20px;
+  /* margin-left: 5px; */
+
+
+
+
+}
+#nextText:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#nextArrow {
+  background-color: rgba(255, 255, 255, 0.1); 
+  width: 50px;
+  height: 50px;
+  margin-left: 2px;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+
+ 
+
+}
+
+#nextArrow:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+
+
+
 
 .authors {
   background-color: blue
@@ -28,17 +91,19 @@
 @media (max-width: 700px){
   /* use this media query to help these two cells drop to the bottom when screens are smaller */
   .authors {
-    
+   grid-row: 9/10;
   }
   .links {
-   
+   grid-row:  10/11;
     
-
+  }
+  .footer {
+    grid-column: 1/2;
   }
   /* container could use some help so that it's children are full screen width */
   .container {
-    grid-template-columns:  1fr;
-    grid-template-rows: repeat(10, 50px);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 1fr);
   
   }
 }
