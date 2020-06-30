@@ -17,6 +17,9 @@
   padding-top: 20px;
   padding-bottom: 20px;
 }
+.container p {
+  line-height: .7cm;
+}
 
 /* .container > div {
   border: solid black 2px;
@@ -102,6 +105,7 @@
 #top {
   padding: 90px;
   color: #2e484c;
+  line-height: .7cm;
  
 }
 
