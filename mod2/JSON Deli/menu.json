@@ -1,0 +1,65 @@
+{
+  "appetizers": [
+    {
+      "name": "chips and dip",
+      "ingredients": [ "tortilla", "spinach", "cheese"],
+      "desc": "cheese sause with spinach and toritlla chips"
+      
+    },
+    {
+      "name": "cheese sticks",
+      "ingredients": ["cheese", "batter", "red sauce"],
+      "desc": "cheese stick breaded and battered "
+    }
+
+  ],
+  "cold sandwiches": [
+    {
+      "name": "tuna sandwich",
+      "ingredient": [ "bread", "cheese", "tuna"],
+      "desc": "tuna salad with mayo on white bread"
+    },
+    {
+      "name": "chicken salad sandwich",
+      "ingredient": [ "bread", "shreded chicken", "mayo"],
+      "desc": "white bread with chicke and house sauce"
+    }
+  
+  ],
+  "hot sandwiches": [
+    {
+      "name": "meatball marinara",
+      "ingredient": ["meatball", "marianara", "white bread"],
+      "desc": "meatball marianara with with bread"
+    },
+    {
+      "name": "cuban sandwich",
+      "ingredient":["white bread","ham", "american cheese","pork", "sauce"],
+      "desc": "perfectly toased cuban sandwich"
+    }
+  ],
+  "desserts": [
+    {
+      "name": "red velvet",
+      "ingredient":["flour", "milk","egg","frosting"],
+      "desc": "red velvetty cake"
+    },
+    {
+      "name": "banana pudding",
+      "ingredient":["milk", "banana","nilla waffers","cool whip"],
+      "desc": "southern banana pudding"
+    }
+  ],
+  "drinks": [
+    {
+      "name": "lemonade",
+      "ingredient":["lemon", "water","sugar"],
+      "desc": "homemade lemonade"
+    },
+    {
+      "name": "pina colada",
+      "ingredient":["pinapple juice", "malibu","ice"],
+      "desc": "Frozen Pina Colada"
+    }
+  ]
+}
